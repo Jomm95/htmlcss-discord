@@ -5,3 +5,178 @@
     padding:0;
     box-sizing: border-box;
 }
+
+.container {
+    height:500px;
+    width:100vw;
+    margin-top:10px;
+    position:relative;  /* da eliminare poi  */
+    background-color: red;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+/* Regole header */
+
+
+
+.nav-bar {
+    height:50px;
+    background-color: aqua;
+    width:80%;
+    margin:auto;
+    position:relative;
+}
+
+
+.logo {
+    width:10%;
+    float:left;
+    height:100%;
+    background-color: blue;
+}
+
+
+
+.nav-menù {
+    height:100%;
+    width:60%;
+    background-color: chartreuse;
+    text-align: center;
+    float:left;
+    margin-left:10%;
+}
+
+.login {
+    width:10%;
+    height:100%;
+    float:right;
+    background-color: darkblue;
+}
+
+.nav-bar:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  /*Header Main content */
+
+  .main-content {
+ 
+
+  }
+
+  .title-and-p {
+    height:250px;
+    width:50%;
+    margin: 40px auto 15px auto;
+    background-color: yellow;
+  }
+
+  .main-btn {
+      height:60px;
+      width:40%;
+      margin:auto;
+      background-color: violet;
+  }
+
+  /* Inizio Main */
+
+.inner-container {
+    width:65vw;
+    height:350px;
+    margin: auto;
+    background-color:wheat;
+    position:relative;
+    top:70px;
+
+}
+
+.img-column {
+    width:45%;
+    height:300px;
+    background-color: blue;
+    display: inline-block; /*fare classe column*/
+}
+
+.text-column {
+    width:45%;
+    height:300px;
+    background-color: lightgreen;
+    float:right;
+}
+
+/* Quarto blocco */
+
+.container-last {
+    width:100vw;
+    height:900px;
+    margin-top:10px;
+    position:relative;  /* da eliminare poi  */
+    background-color: red;
+}
+
+.img-container {
+    margin:auto;
+    background-color: green;
+}
+
+.big-img {
+    height:300px;
+    width:60%;
+    display: block;
+    background-color: blue;
+    margin: auto;
+}
+.text-and-btn {
+    height:200px;
+    width: 40%;
+    background-color: chocolate;
+    margin:auto;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #23272a;
+    margin-top:10px;
+    height:600px;
+}
+.footer-elements-container {
+    width:80%;
+    height:600px;
+    margin:auto;
+    padding-top:40px;
+}
+
+.footer-elements-container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.footer-right-col {
+    height:400px;
+    width:30%;
+    background-color: black;
+    display:inline-block;
+}
+
+.footer-left-col {
+    height:400px;
+    width:70%;
+    background-color: grey;
+    float:right;
+    display:inline-block;
+
+}
+
+.sub-footer {
+        height:100px;
+        background-color: cyan;
+}
