@@ -4,14 +4,30 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, button {
+    text-decoration: none;
+    cursor:pointer;
+}
+
+header {
+    color:white;
+}
+
+.jumbotron {
+    height:480px;
+    width:100vw;
+    position:relative;  /* da eliminare poi  */
+    background-image: url(./img/jumbo.png);
+    background-size: cover;
 }
 
 .container {
     height:500px;
     width:100vw;
     margin-top:10px;
-    position:relative;  /* da eliminare poi  */
-    background-color: red;
 }
 
 .container:after {
@@ -19,13 +35,20 @@
     display: block;
     clear: both;
   }
+
+  #arrow-symbol {
+      font-size: 14px;
+      margin-right:10px;
+  }
+
+  
+
 /* Regole header */
 
 
 
 .nav-bar {
     height:50px;
-    background-color: aqua;
     width:80%;
     margin:auto;
     position:relative;
@@ -34,27 +57,49 @@
 
 .logo {
     width:10%;
-    float:left;
     height:100%;
-    background-color: blue;
+    float:left;
 }
 
+.logo img {
+    height:100%;
+    max-width:100%;
+}
 
+/* nav menù */
 
 .nav-menù {
     height:100%;
     width:60%;
-    background-color: chartreuse;
     text-align: center;
     float:left;
     margin-left:10%;
 }
 
-.login {
+.nav-menù ul {
+    line-height: 50px;
+    font-size: 13px;
+}
+
+.nav-menù li {
+    display:inline-block;
+    margin:0 12px;
+}
+
+.nav-menù li a {
+    display:inline-block;
+    margin:0 12px;
+    color:white;
+}
+
+/* login */
+
+.login-div {
     width:10%;
-    height:100%;
-    float:right;
-    background-color: darkblue;
+    height:50px;
+    line-height: 50px;
+    float: right;
+    text-align: center;
 }
 
 .nav-bar:after {
@@ -63,51 +108,115 @@
     clear: both;
   }
 
+  /* Stile Pulsanti */
+
+.btn {
+    padding:8px 16px;
+    border-radius: 40px;
+    font-weight: 700;
+    border:none;  
+}
+
+.login-div .btn {
+    color:black;
+}
+
+.btn-white {
+    color:black;
+}
+
+.btn-black {
+background-color: #222;
+color:white;
+}
+
+.btn.btn-big {
+    padding:16px 32px;
+}
+
+
   /*Header Main content */
 
-  .main-content {
- 
-
+  .main-text {
+    height:250px;
+    width:45%;
+    margin: 60px auto 15px auto;
+    text-align: center;
+    line-height: 30px;
+    
   }
 
-  .title-and-p {
-    height:250px;
-    width:50%;
-    margin: 40px auto 15px auto;
-    background-color: yellow;
+  .main-text h1 {
+      font-size: 42px;
+      margin-bottom:30px;
+      
   }
 
   .main-btn {
       height:60px;
+      line-height: 60px;
       width:40%;
-      margin:auto;
-      background-color: violet;
+      margin:0 auto 690px auto;
+      text-align: center;
   }
 
   /* Inizio Main */
 
 .inner-container {
-    width:65vw;
+    width:60vw;
     height:350px;
     margin: auto;
-    background-color:wheat;
     position:relative;
     top:70px;
-
+}
+main h3 {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-bottom: 30px;
 }
 
 .img-column {
-    width:45%;
+    width:55%;
     height:300px;
-    background-color: blue;
-    display: inline-block; /*fare classe column*/
+    display: inline-block;
 }
 
+
 .text-column {
-    width:45%;
-    height:300px;
-    background-color: lightgreen;
+    width:33%;
     float:right;
+}
+
+.text-column p {
+    font-size: 14px;
+}
+
+/* Primo Blocco */
+
+#col-1 {
+    background-image: url(./img/item1.svg);
+    background-size: cover;
+}
+
+/* Secondo blocco */
+
+#col-2 {
+    background-image: url(./img/item2.svg);
+    background-size: cover;
+    float:right;
+}
+
+.text-column-left {
+    width:30%;
+    float:left;
+}
+
+/* Terzo blocco */
+
+#col-3 {
+    background-image: url(./img/item3.svg);
+    background-size: cover;
 }
 
 /* Quarto blocco */
@@ -116,27 +225,42 @@
     width:100vw;
     height:900px;
     margin-top:10px;
-    position:relative;  /* da eliminare poi  */
-    background-color: red;
+    text-align: center;
 }
 
-.img-container {
-    margin:auto;
-    background-color: green;
+.container-last h3 {
+    font-size: 30px;
 }
+
+.container-last p {
+    font-size: 16px;
+}
+
 
 .big-img {
-    height:300px;
-    width:60%;
-    display: block;
-    background-color: blue;
-    margin: auto;
+    height:450px;
+    width:100%;
+    background-image: url(./img/item4-big.svg);
+    background-size: cover;
 }
 .text-and-btn {
-    height:200px;
-    width: 40%;
-    background-color: chocolate;
+    height:120px;
+    width: 50%;
     margin:auto;
+    background-image: url(./img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.text-and-btn p {
+    margin: 60px auto 30px auto;
+    font-size: 20px;
+}
+
+.container-last button {
+    background-color: #8ea1e1;
+    color:white;
+    width:200px;
 }
 
 
@@ -146,28 +270,51 @@ footer {
     background-color: #23272a;
     margin-top:10px;
     height:600px;
+    color:white;
 }
 .footer-elements-container {
-    width:80%;
+    width:60%;
     height:600px;
     margin:auto;
     padding-top:40px;
 }
 
-.footer-elements-container:after {
+.right-col:after {
     content: '';
     display: block;
     clear: both;
 }
-
-.footer-right-col {
-    height:400px;
-    width:30%;
+/* colonna sinistra */
+ footer .left-col {
+    height:200px;
+    width:25%;
     background-color: black;
     display:inline-block;
 }
 
-.footer-left-col {
+footer .left-col h4 {
+    font-size: 23px;
+    color:#8ea1e1;
+}
+
+footer .left-col p {
+    font-size: 12px;
+}
+
+#ita-flag {
+    height: 8px;
+    width:12px;
+    margin-right:3px;
+}
+
+select {
+    appearance: none;
+}
+
+
+
+/* Colonna destra */
+footer .right-col {
     height:400px;
     width:70%;
     background-color: grey;
